@@ -1,0 +1,173 @@
+.row.slim
+	margin-left: 0
+	margin-right: 0
+
+.row.slim > [class^="col-"], .slim > [class*=" col-"]
+	padding-left: 0!important
+	padding-right: 0!important
+.container-fluid
+	padding-left: 0!important
+	padding-right: 0!important
+
+.main-content
+	font-family: "Rajdhani"
+	background-color: #1A1C28
+	color: #A5B7C1
+.payment
+	padding-top: 4.5rem
+	.container-fluid
+		width: 80%
+	&-thumb
+		margin-bottom: 2rem
+		img
+			border-radius: 5px
+	&-details
+		background: #1E202C
+		border-radius: 5px
+		padding-top: 2em
+		padding-bottom: 2rem
+.form-group
+	margin-left: 2rem
+	margin-right: 2rem
+
+.new-select
+	font-weight: 400
+	font-size: 1.042vw
+	position: relative
+	border: 1px solid #ced4da
+	padding: 19px 27px
+	cursor: pointer
+	user-select: none
+	color: #BD3368
+	background: #222430
+	border: 1px solid #BD3368
+	box-sizing: border-box
+	box-shadow: 0px 0px 10px #BD3368
+
+	&:after
+		content: ''
+		display: block
+		width: 14px
+		height: 7px
+		position: absolute
+		right: 21px
+		top: 27px
+		background-image: url("data:image/svg+xml,%3Csvg width='14' height='7' viewBox='0 0 14 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.255995 0.237128C0.419958 0.0915129 0.64231 0.0097106 0.874153 0.0097106C1.106 0.0097106 1.32835 0.0915129 1.49231 0.237128L6.99453 5.12513L12.4968 0.237128C12.5774 0.162942 12.6739 0.103768 12.7806 0.0630604C12.8872 0.0223524 13.002 0.000925537 13.1181 2.93267e-05C13.2342 -0.000866884 13.3493 0.0187861 13.4567 0.057841C13.5642 0.096896 13.6618 0.154571 13.7439 0.227501C13.826 0.300431 13.8909 0.387154 13.9349 0.482612C13.9789 0.57807 14.001 0.68035 14 0.783485C13.999 0.886619 13.9748 0.988543 13.929 1.08331C13.8832 1.17807 13.8166 1.26378 13.7331 1.33543L7.61269 6.77258C7.44873 6.9182 7.22638 7 6.99453 7C6.76269 7 6.54034 6.9182 6.37638 6.77258L0.255995 1.33543C0.0920816 1.18977 0 0.992243 0 0.78628C0 0.580318 0.0920816 0.382788 0.255995 0.237128Z' fill='%23BD3368'/%3E%3C/svg%3E%0A")
+		background-repeat: no-repeat
+		background-size: 1.481vh
+		opacity: 0.6
+		transition: all .27s ease-in-out
+		transform: rotate(0deg)
+
+.new-select.on
+	color: #A5B7C1
+
+	&:after
+		transform: rotate(-90deg)
+		background-image: url("data:image/svg+xml,%3Csvg width='15' height='8' viewBox='0 0 15 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.79422 0.658075C0.959875 0.514386 1.18317 0.43519 1.415 0.437901C1.64682 0.440612 1.8682 0.525009 2.03045 0.672532L7.47514 5.62454L13.0341 0.801217C13.1157 0.727979 13.2128 0.669937 13.32 0.630479C13.4271 0.591022 13.5421 0.570938 13.6582 0.571399C13.7743 0.571861 13.8892 0.592859 13.9962 0.633168C14.1031 0.673476 14.2001 0.732289 14.2813 0.806174C14.3626 0.880059 14.4265 0.967536 14.4693 1.0635C14.5122 1.15947 14.5331 1.262 14.5309 1.36511C14.5286 1.46823 14.5033 1.56986 14.4564 1.66409C14.4095 1.75831 14.3419 1.84323 14.2575 1.9139L8.07399 7.27911C7.90834 7.4228 7.68504 7.50199 7.45321 7.49928C7.22139 7.49657 7.00001 7.41218 6.83776 7.26465L0.781377 1.7563C0.619178 1.60874 0.529412 1.41014 0.531821 1.2042C0.534229 0.998247 0.628615 0.801807 0.79422 0.658075V0.658075Z' fill='%23A5B7C1'/%3E%3C/svg%3E ")
+		background-repeat: no-repeat
+.new-select__item span:hover
+	color: #BD3368
+
+.form-check-label
+	color: #BD3368
+	padding-left: 20px
+	font-size: 1.042vw
+	font-weight: 400
+
+.form-check
+	margin-left: 2rem
+	input
+		position: absolute
+		visibility: hidden
+
+	.check
+		display: block
+		position: absolute
+
+		box-shadow: 0px 0px 5px #BD3368
+		border: 2px solid #BD3368
+		border-radius: 100%
+		height: 28px
+		width: 28px
+		top: 0px
+		left: 0px
+		z-index: 5
+		transition: border .25s linear
+		-webkit-transition: border .25s linear
+
+		&:before
+			display: block
+			position: absolute
+			content: ''
+			border-radius: 100%
+			height: 18px
+			width: 18px
+			top: 3px
+			left: 3px
+			margin: auto
+			transition: background 0.25s linear
+			-webkit-transition: background 0.25s linear
+
+input[type=checkbox]:checked ~ .check::before
+	background: #BD3368
+
+.btn-buy
+	color: #BD3368
+	text-transform: uppercase
+	background: #222430
+	border: 1px solid #BD3368
+	box-sizing: border-box
+	box-shadow: 0px 0px 10px #BD3368
+	width: calc(100% - 4rem)
+	font-size: 1.302vw
+	font-weight: 500
+	padding-top: 19px
+	padding-bottom: 19px
+	margin-left: 2rem
+	margin-right: 2rem
+	margin-top: 1rem
+	&:hover
+		background: #BD3368
+
+.payment-details-content
+	padding-left: 2rem
+.title-block
+	background: #1E202C
+	border-radius: 5px
+	padding: 20px
+.details-subtitle
+	font-size: 1.302vw
+	font-weight: 400
+	background: #222430
+	padding: 19px 14px
+
+@media (min-width: 1400px)
+	.col-xxl-3
+		-ms-flex: 0 0 25%
+		flex: 0 0 25%
+		max-width: 25%
+
+@media (min-width: 1400px)
+	.col-xxl-9
+		-ms-flex: 0 0 75%
+		flex: 0 0 75%
+		max-width: 75%
+
+// Medium devices (tablets, 768px and up)
+
+@media (min-width: 992px) and (max-width: 1199.98px)
+	.new-select
+		font-size: 1.32vw
+
+@media (max-width: 991px)
+	.new-select
+		font-size: 2.042vw
+
+@media (max-width: 768px)
+	.new-select
+		font-size: 2.042vw
+
+@media (max-width: 576px)
+	.new-select
+		font-size: 3.042vw
