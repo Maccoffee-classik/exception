@@ -240,6 +240,18 @@ input[type=checkbox]:checked ~ .check::before {
   padding: 19px 14px;
 }
 
+@media (max-width: 768px) {
+  .details-subtitle {
+    font-size: 2.042vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .details-subtitle {
+    font-size: 3.042vw;
+  }
+}
+
 .details-info span {
   display: inline-block;
   padding: 9px 10px;
@@ -248,6 +260,18 @@ input[type=checkbox]:checked ~ .check::before {
   font-weight: 600;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .details-info span {
+    font-size: 2.042vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .details-info span {
+    font-size: 3.042vw;
+  }
 }
 
 .details-info span b {
@@ -268,6 +292,18 @@ input[type=checkbox]:checked ~ .check::before {
   font-size: 1.302vw;
   font-weight: 400;
   padding: 25px 50px;
+}
+
+@media (max-width: 768px) {
+  .nav-tabs a {
+    font-size: 2.042vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-tabs a {
+    font-size: 3.042vw;
+  }
 }
 
 .nav-tabs .nav-link {
@@ -303,9 +339,33 @@ input[type=checkbox]:checked ~ .check::before {
   font-weight: 400;
 }
 
+@media (max-width: 768px) {
+  .description-list {
+    font-size: 2.042vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .description-list {
+    font-size: 3.042vw;
+  }
+}
+
 .specifications, .screen_video, .reviews {
   font-size: 1.302vw;
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .specifications, .screen_video, .reviews {
+    font-size: 2.042vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .specifications, .screen_video, .reviews {
+    font-size: 3.042vw;
+  }
 }
 
 @media (min-width: 1400px) {
