@@ -9,23 +9,7 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link href="fonts/font.css" rel="stylesheet">
 	<title>Exception</title>
-	<link href="select2.css" rel="stylesheet" />
-	<script src="select2.js"></script>
-	<link href="bootstrap.css" rel="stylesheet" />
-	<script src="bootstrap.js"></script>
-	<script>
-		function format(state) {
-			if (!state.id) return state.text; // optgroup
-			return "<img class='flag' src='images/flags/" + state.id.toLowerCase() + ".png'/>" + state.text;
-		}
-		$("#e4").select2({
-			formatResult: format,
-			formatSelection: format,
-			escapeMarkup: function (m) {
-				return m;
-			}
-		});
-	</script>
+
 </head>
 
 <body>
