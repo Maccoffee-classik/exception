@@ -368,6 +368,96 @@ input[type=checkbox]:checked ~ .check::before {
   }
 }
 
+.reviews .form-group {
+  margin-top: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+}
+
+.label-rewiews {
+  position: absolute;
+  left: 30px;
+  top: -20px;
+  border-bottom: 1px solid #BD3368;
+  background: #1E202C;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #BD3368;
+  padding: 0 10px;
+  margin-bottom: 0;
+}
+
+.label-rewiews:after {
+  right: 0;
+  bottom: 0;
+  border-right: 1px solid #BD3368;
+  border-bottom: 17px solid #BD3368;
+  position: absolute;
+  content: '';
+}
+
+.label-rewiews::before {
+  left: 0;
+  bottom: 0;
+  border-left: 1px solid #BD3368;
+  border-bottom: 17px solid #BD3368;
+  position: absolute;
+  content: '';
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 160px;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 20px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #A5B7C1;
+  background-color: #222430;
+  background-clip: padding-box;
+  border: 1px solid #BD3368;
+  border-radius: 0;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+  color: #A5B7C1;
+  background-color: #222430;
+  border-color: #BD3368;
+  outline: 0;
+  box-shadow: 0px 0px 10px #BD3368;
+}
+
+.btn-reviews {
+  margin-left: auto;
+  color: #BD3368;
+  background: #222430;
+  border: 1px solid #BD3368;
+  padding: 19px 21px;
+  font-size: 1.302vw;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .btn-reviews {
+    font-size: 2.042vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-reviews {
+    font-size: 3.042vw;
+  }
+}
+
+.btn-reviews:hover {
+  text-shadow: 0px 0px 3.5px #BD3368;
+}
+
 @media (min-width: 1400px) {
   .col-xxl-3 {
     flex: 0 0 25%;
